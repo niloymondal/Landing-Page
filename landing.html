@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Landing Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="landing.css" />
+  </head>
+
+  <body>
+    <nav>
+      <div class="heading">Landing Page</div>
+      <div class="navbar">
+        <ul>
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Sign Up</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="line" id="Home">
+      <div class="side1">
+        <h1><q>EyeforAnEye</q></h1>
+        <p>
+          <em
+            >A programming language is a formal language that specifies a set of
+            instructions for a computer to perform specific tasks. It's used to
+            write software programs and applications, and to control and
+            manipulate computer systems. There are many different programming
+            languages, each with its own syntax, structure, and set of commands.
+            Some of the most commonly used programming languages include Java,
+            Python, C++, JavaScript, and C#. The choice of programming language
+            depends on the specific requirements of a project, including the
+            platform being used, the intended audience, and the desired outcome.
+            Programming languages continue to evolve and change over time, with
+            new languages being developed and older ones being updated to meet
+            changing needs.</em
+          >
+        </p>
+        <br />
+        <p>
+          <em
+            >Are you aiming to become a software engineer one day? Do you also
+            want to develop a mobile application that people all over the world
+            would love to use? Are you passionate enough to take the big step to
+            enter the world of programming? Then you are in the right place
+            because through this article you will get a brief introduction to
+            programming. Now before we understand what programming is, you must
+            know what is a computer. A computer is a device that can accept
+            human instruction, processes it, and responds to it or a computer is
+            a computational device that is used to process the data under the
+            control of a computer program. Program is a sequence of instruction
+            along with data.
+          </em>
+        </p>
+        <br />
+        <button onclick="window.location.href='https://www.geeksforgeeks.org/'">
+          Explore More
+        </button>
+      </div><br>
+      <div class="side2">
+        <img src="./images/maxresdefault.jpg" width="1000" />
+      </div>
+    </div>
+
+    <section class="about" id="about">
+      <div class="title">
+        <h1 style="text-align: center; font-size: 40px; margin: 20px 0px 20px">
+          Courses
+        </h1>
+      </div>
+      <div class="boxes">
+        <div class="box">
+          <div class="topic">DSA</div>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus
+            PageMaker including versions of Lorem Ipsum.
+          </p>
+        </div>
+        <div class="box">
+          <div class="topic">HTML</div>
+          <p>
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The point
+            of using Lorem Ipsum is that it has a more-or-less normal
+            distribution of letters, as opposed to using 'Content here, content
+            here', making it look like readable English. Many desktop publishing
+            packages and web page editors now use Lorem Ipsum as their default
+            model text, and a search for 'lorem ipsum' will uncover many web
+            sites still in their infancy.
+          </p>
+        </div>
+        <div class="box">
+          <div class="topic">CSS</div>
+          <p>
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour, or randomised words which don't look even slightly
+            believable. If you are going to use a passage of Lorem Ipsum, you
+            need to be sure there isn't anything embarrassing hidden in the
+            middle of text. All the Lorem Ipsum generators on the Internet tend
+            to repeat predefined chunks as necessary,
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="content">
+        <div class="title">
+          <h1
+            style="text-align: center; font-size: 40px; margin: 20px 0px 20px"
+          >
+            Sign Up
+          </h1>
+        </div>
+        <div class="contactMenu">
+          <div class="input1">
+            <label>Your Name</label>
+            <input type="text" placeholder="Enter your Name here" />
+            <label>Your Email</label>
+            <input type="text" placeholder="Enter your Email here" />
+            <label>Your Password</label>
+            <input type="text" placeholder="Enter your Password here" />
+            <div class="button"><button>Sign Up</button></div>
+          </div>
+          <div class="input3">
+            <h3>Contact Us</h3>
+            <address>
+              Cecilia Chapman 711-2880 Nulla St. Mankato Mississippi 96522 (257)
+              563-7401
+            </address> 
+            <h3>More Information</h3>
+            <p>
+              Whether you’re just starting your coding journey or preparing for
+              your next big tech challenge, you’ve found the right place. </p> <p>Get ready to explore, experiment, and
+              evolve in the world of technology. Your learning adventure starts
+              here—let’s code the future together!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="not-found" id="not-found">
+      <h1>404</h1>
+      <p>Oops! The page you’re looking for doesn’t exist.</p>
+      <button onclick="location.href='#Home'">Back to Home</button>
+    </section>
+
+    <footer>
+      <span>Created By - Niloy Mondal</span>
+    </footer>
+  </body>
+</html>

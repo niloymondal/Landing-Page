@@ -1,0 +1,257 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  color: black;
+  font-family: "Fira Sans", sans-serif;
+}
+
+nav {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  background-color: #8cc099;
+}
+
+nav .heading {
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+nav ul li {
+  padding: 8px 15px;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+nav ul li:hover,
+nav ul li a:hover {
+  background-color: green;
+  color: white;
+}
+
+nav .sideMenuButton {
+  font-size: 30px;
+  font-weight: bolder;
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  nav .sideMenuButton {
+    display: flex;
+  }
+
+  nav .navbar {
+    display: none;
+  }
+
+  .sideNavigationBar {
+    display: block !important;
+  }
+}
+
+.sideNavigationBar {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: green;
+  overflow-x: hidden;
+  transition: 0.3s ease-in;
+  padding-top: 60px;
+  display: none;
+}
+
+.sideNavigationBar a {
+  padding: 8px 40px;
+  display: block;
+  font-size: 25px;
+  font-weight: 500;
+  color: #d1d1d1;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.sideNavigationBar a:hover {
+  color: white;
+}
+
+.sideNavigationBar .closeButton {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 20px;
+}
+
+.line {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4% 5%;
+}
+
+.side1 h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+  color: green;
+}
+
+.side1 button,
+.button button,
+.not-found button {
+  width: 200px;
+  padding: 12px 20px;
+  border-radius: 20px;
+  border: none;
+  font-size: 17px;
+  font-weight: 600;
+  background-color: #8cc099;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.side1 button:hover,
+.button button:hover,
+.not-found button:hover {
+  background-color: green;
+}
+
+.about {
+  margin: 4% 5%;
+}
+
+.about .boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.about .box {
+  flex: 1;
+  max-width: 350px;
+  margin: 10px;
+  text-align: center;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.about .box:hover {
+  transform: scale(1.05);
+}
+
+.about .box .topic {
+  font-size: 24px;
+  font-weight: bold;
+  color: green;
+  margin-bottom: 10px;
+}
+
+.about .box .topic a {
+  text-decoration: none;
+  color: green;
+  transition: color 0.3s;
+}
+
+.about .box .topic a:hover {
+  color: darkgreen;
+}
+
+.contact {
+  margin: 4% 5%;
+}
+
+.contactMenu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+
+.input1,
+.input3 {
+  flex: 1;
+  max-width: 500px;
+  padding: 20px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:hover,
+input[type="text"]:focus {
+  border-color: green;
+  box-shadow: 0 0 5px rgba(0, 128, 0, 0.5);
+  outline: none;
+}
+
+footer {
+  background: #8cc099;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+footer a {
+  color: white;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .line,
+  .contactMenu {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.not-found {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.not-found h1 {
+  font-size: 80px;
+  color: green;
+}
+
+.not-found p {
+  font-size: 20px;
+  margin: 20px 0;
+  color: #333;
+}
